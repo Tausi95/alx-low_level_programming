@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*main-a program that print size of variables using the printf function.
+*main - a program thaT prints size of computer types using the printf function.
 *Return: 0(success)
 */
 

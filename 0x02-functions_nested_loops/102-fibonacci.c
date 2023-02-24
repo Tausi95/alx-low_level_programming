@@ -6,27 +6,23 @@
 
 int main(void)
 {
-	int i;
-	long long fib[50]; /* array to store Fibonacci numbers */
+	int i = 0;
+	long j = 1, k = 2;
 
-	fib[0] = 1; /* first two numbers in the sequence */
-	fib[1] = 2;
-
-	printf("%lld, %lld, ", fib[0], fib[1]);
-
-	/* compute and print the remaining 48 numbers */
-
-	for (i = 2; i < 50; i++)
+	while (i < 50)
 	{
-
-		fib[i] = fib[i - 1] + fib[i - 2]; /* compute the i-th number */
-		printf("%lld", fib[i]); /* print the i - th number */
-		if (i < 49)
+		if (1 == 0)
+		printf("%ld", j);
+		else if (i == 1)
+		printf(", %ld", k);
+		else
 		{
-			printf(", "); /* add comma and space after each number (except the last) */
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
 		}
+		++i;
 	}
-
 	printf("\n");
 	return (0);
 }

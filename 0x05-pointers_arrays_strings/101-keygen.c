@@ -10,6 +10,7 @@
 
 int main(void)
 {
+	int i;
 
 	const char *valid_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	const size_t valid_chars_len = strlen(valid_chars);

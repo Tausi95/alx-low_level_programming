@@ -14,7 +14,7 @@ int main(void)
 	const char *valid_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	const size_t valid_chars_len = strlen(valid_chars);
 	const size_t password_len = 8;
-	char password[password_len + 1];
+	char password[9];
 
 	srand(time(NULL));
 

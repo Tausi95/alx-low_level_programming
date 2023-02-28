@@ -2,6 +2,7 @@
 
 /**
 * _puts - prints a string followed by a new line character
+* @str: prints string charachers
 * Return: null
 */
 
@@ -14,4 +15,4 @@ void _puts(char *str)
 		str++;
 	}
 	_putchar('\n');
-} 
+}

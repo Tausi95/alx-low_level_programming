@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int i;
+	size_t t;
 
 	const char *valid_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	const size_t valid_chars_len = strlen(valid_chars);
@@ -19,7 +19,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (size_t i = 0; i < password_len; i++)
+	for (i = 0; i < password_len; i++)
 	{
 
 		password[i] = valid_chars[rand() % valid_chars_len];

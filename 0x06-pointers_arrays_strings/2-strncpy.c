@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * *_strncpy - find the length of a string

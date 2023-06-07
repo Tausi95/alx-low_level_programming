@@ -3,7 +3,7 @@
 /**
 * factorial - a function that returns the factorial of a given number
 * @x: the number to be calculated
-* Return: returns the value of x as an int 
+* Return: returns the value of x as an int
 */
 int factorial(int x) /* function definition */
 {

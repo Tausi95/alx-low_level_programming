@@ -22,7 +22,7 @@ int _strlen_recursion(char *s)
  * Return: boolean
  */
 
-int palind(char *ptr_strs, int p)
+int palind(char *ptr_str, int p)
 {
 	if (p < 1)
 	{

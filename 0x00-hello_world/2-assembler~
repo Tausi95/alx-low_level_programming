@@ -1,0 +1,5 @@
+B
+#!/bin/bash
+
+C
+gcc -c

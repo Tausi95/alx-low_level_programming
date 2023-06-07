@@ -27,6 +27,6 @@ int _sqrt_function(int i, int j)
 	if (j * j > i)
 		return (-1);
 	if (j * j == i)
-		return (i);
+		return (j);
 	return (_sqrt_function(i, j + 1));
 }

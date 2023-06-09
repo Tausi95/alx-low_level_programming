@@ -42,6 +42,6 @@ int main(int argc, char *argv[])
 
 	min = quarters + dimes + nickels + coins + pennies;
 	printf("The minimum amount of coin(s) is : %d\n", min);
-	
+
 	return (0);
 }

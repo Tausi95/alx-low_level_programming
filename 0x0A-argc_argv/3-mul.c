@@ -14,7 +14,7 @@ int multiply(int a, int b);
 int main(int argc, char *argv[])
 {
 	int num1, num2;
-	
+
 	if (argc != 3)
 	{
 		printf("Error: Two integer arguments are needed\n");

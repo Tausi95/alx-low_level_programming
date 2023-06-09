@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-	int quarters, dimes, nickels, coin, pennies;
+	int quarters, dimes, nickels, coins, pennies;
 	int min;
 
 	if (argc != 2)
@@ -35,12 +35,13 @@ int main(int argc, char *argv[])
 	nickels = cents / 5;
 	cents = cents - (nickels * 5);
 
-	coin = cents / 2;
-	cents = cents - (coin * 2);
+	coins = cents / 2;
+	cents = cents - (coins * 2);
 
 	pennies = cents / 1;
 
-	min = quarters + dimes + nickels + coin + pennies;
-	printf("The minimu amount of coin is : %d\n", min);
+	min = quarters + dimes + nickels + coins + pennies;
+	printf("The minimum amount of coin(s) is : %d\n", min);
+	
 	return (0);
 }

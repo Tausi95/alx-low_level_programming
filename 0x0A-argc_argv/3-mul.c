@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error: Two integer arguments are needed\n");
+		printf("Error:\n");
 		return (1);
 	}
 
@@ -29,6 +29,12 @@ int main(int argc, char *argv[])
 	return (0);
 }
 /*function definition */
+/**
+* multiply - A function that multiplies two integers
+* @a: The first integer
+* @b: The second integer
+* Return: The product of a and b
+*/
 int multiply(int a, int b)
 {
 	return (a * b);

@@ -31,7 +31,7 @@ char *create_array(unsigned int size, char c)
         }
 
         /* Initialize the array, arr with the specified char */
-        for (i = 0; i < size; i++)
+        for (j = 0; j < size; j++)
         {
                 arr[j] = c;
         }

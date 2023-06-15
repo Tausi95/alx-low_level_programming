@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
-* *_realloc - a function that allocate and deallocate a memory block 
+* *_realloc - a function that allocate and deallocate a memory block
 * using the malloc and free functions
 * @ptr: a pointer to a memory allocated by malloc
 * @old_size: memory in bytes allocated to ptr
@@ -8,8 +8,8 @@
 *
 * Return: NULL if ne_size == 0 and ptr is not NULL.
 */
- 
-void *_realloca(void *ptr, unsigned int old_size, unsigned int new_size)
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *new_ptr;
 	unsigned int i;
@@ -36,6 +36,7 @@ void *_realloca(void *ptr, unsigned int old_size, unsigned int new_size)
 	unsigned int copy_size = (old_size < new_size) ? old_size : new_size;
 	char *src = (char *)ptr;
 	char *dest = (char *)new_ptr;
+
 	for (i = 0; i < copy_size; i++)
 		dest[i] = src[i];
 

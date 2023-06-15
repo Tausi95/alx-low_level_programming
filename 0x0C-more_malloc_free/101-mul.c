@@ -11,17 +11,18 @@ int multiply_numbers(int num1, int num2);
 *
 * Return: always return 0 if success
 */
-int main(int arg, char* argv[])
+int main(int arg, char *argv[])
 {
 	int i, j;
+
 	if (argc != 3)
 		exit(98);
-	
+
 	int num1 = 0, num2 = 0;
-	char* endptr;
+	char *endptr;
 
 	for (i = 1; i < argc; i++)
-		char* arg = argv[i];
+		char *arg = argv[i];
 
 	/* Check if each argument is composed of digits */
 	for (j = 0; arg[j] != '\0'; j++)
@@ -58,13 +59,14 @@ void print_result(int result)
 	}
 
 	/* create a character array to store the digits as characters */
-	char* num_str = malloc((digits + 1) * sizeof(char));
+	char *num_str = malloc((digits + 1) * sizeof(char));
 
 	/* Convert the result to a string */
 	for (i = digits - 1; i >= 0; i--)
 	{
 		num_str[i] = '0' + (result % 10);
-		return (/= 10);
+
+		result /= 10;
 	}
 
 	/* Print the result character by character */
@@ -78,12 +80,12 @@ void print_result(int result)
 }
 /* Function definition */
 /**
-* multiply_numbers - A Function that multiply two positive integers
+* multiply_numbers - function that multiply two positives integers
 * @num1: the first integer
 * @num2: the second integers
-* Return: num1 * num2*
+* Return: num1 * num2
 */
-int multiply(int num1, int num2)
+int multiply_numbers(int num1, int num2)
 {
-	return num1 * num2:
+	return (num1 * num2);
 }

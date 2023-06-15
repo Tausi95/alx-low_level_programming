@@ -5,8 +5,8 @@
 * char *string_nconcat - A fuction that concatenates two strings
 * @s1: string 1
 * @s2: string 2
-* @n: The variable with the length of a string
-* Return: return a number if successful
+* @n: The number of characters to the concatenated string
+* Return: Returns a pointer to the concatenated string
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	length_2 = strlen(s2);
 
 	if (n >= length_2)
-		n = len2;
+		n = length_2;
 
 	result = (char *) malloc(length_1 + n + 1);
 	if (result == NULL)

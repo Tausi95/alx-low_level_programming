@@ -1,10 +1,9 @@
 #include <stdlib.h>
 /**
-* *_realloc - a function that allocate and deallocate a memory block
-* using the malloc and free functions
-* @ptr: a pointer to a memory allocated by malloc
-* @old_size: memory in bytes allocated to ptr
-* @new_size: memory is bytes allocated to a new memory block
+* _realloc - A function that reallocates a memory block using malloc and free
+* @ptr: a pointer to a memory to the previously  allocated memory block
+* @old_size: Size of the old memory block
+* @new_size: Size of the new memory block
 *
 * Return: NULL if ne_size == 0 and ptr is not NULL.
 */
@@ -24,8 +23,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	/* If new_size is zero, equivalent to free(ptr) and return NULL */
 	if (new_size == 0)
+	{
 		free(ptr);
 		return (NULL);
+	}
 
 	/* Allocate new memory block */
 	new_ptr = malloc(new_size);

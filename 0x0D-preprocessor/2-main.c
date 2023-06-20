@@ -3,7 +3,7 @@
 /**
 * main - This is a program from the main function that prints the name
 * of the file it was compiled from
-* Return: returns 0 
+* Return: returns 0
 */
 int main(void)
 {

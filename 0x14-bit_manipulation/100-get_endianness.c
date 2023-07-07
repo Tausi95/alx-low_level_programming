@@ -9,7 +9,8 @@ int get_endianness(void)
 	unsigned int num = 1;
 	char *ptr = (char *)&num;
 
-	/* If the first byte (lowest memory address) is non-zero, it is little endian */
+/* If the first byte (lowest memory address) is non-zero, */
+/* it is little endian */
 	if (*ptr)
 		return (1);
 	else

@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * Jump_search - a function that searches for a value in an array using the jump serach
+ * Jump_search - a function that searches for
+ * a value in an array using the jump serach
  * @value: Value being searched for
  * @array: array to search in
  * @size: size of the array
